@@ -1,3 +1,4 @@
+using CNRBShop;
 using CNRBShop.DbContexts;
 using CNRBShop.Services;
 using Microsoft.EntityFrameworkCore;
@@ -24,5 +25,5 @@ if (app.Environment.IsDevelopment())
 }
 
 app.MapDefaultControllerRoute();
-
+DbInitializer.Seed(app);
 app.Run();

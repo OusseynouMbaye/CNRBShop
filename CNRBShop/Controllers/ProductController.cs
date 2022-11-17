@@ -21,7 +21,7 @@ namespace CNRBShop.Controllers
             //return View(_productRepository.GetAllProducts);
 
             ProductListViewModel productListViewModel = new ProductListViewModel
-                (_productRepository.GetAllProducts, "chandails");
+                (_productRepository.GetAllProducts, "All Products");
             return View(productListViewModel);
         }
 

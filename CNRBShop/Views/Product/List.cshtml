@@ -3,30 +3,11 @@
 <h2>@Model.CurrentCategory</h2>
 
 
-
 <div class="row row-cols-1 row-cols-md-3 g-4">
 
     @foreach (var product in Model.Products)
     {
-        <div class="col">
-            <div class="card product-card">
-                <img src="@product.ImageThumbnailUrl" class="card-img-top" alt="@product.ProductName">
-                <div class="card-body product-button">
-                    <h4 class="d-grid">
-                    </h4>
-
-                    <div class="d-flex justify-content-between mt-2">
-                        <h2 class="text-start">
-                            <a class="product-link" asp-controller="Product"
-                           asp-action="Details" asp-route-id="@product.ProductId">@product.ProductName</a>
-                        </h2>
-                        <h5 class="text-nowrap">
-                            @product.Price.ToString("c")
-                        </h5>
-                    </div>
-                </div>
-            </div>
-        </div>
+        <partial name="_ProductCard" model="product" />
     }
 
 </div>

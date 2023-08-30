@@ -15,6 +15,8 @@ builder.Services.AddDbContext<CNRBShopDbContext>(options =>
     options.UseSqlite(builder.Configuration["ConnectionStrings:CNRBShopDb123ConnectionString"]));
 
 var app = builder.Build();
+
+app.UseDefaultFiles();
 app.UseStaticFiles();
 
 if (app.Environment.IsDevelopment())

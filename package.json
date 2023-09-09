@@ -1,10 +1,10 @@
 {
-  "name": "CNRBShop",
+  "name": "cnrbshop",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
-    "css:build": "npx tailwindcss -i ./wwwroot/css/site.css -o ./wwwroot/css/styles.css --minify"
+    "css:build": "npx tailwindcss -i ./wwwroot/tailwind/tailwind.css -o ./wwwroot/tailwind/tailwind.css --minify"
   },
   "keywords": [],
   "author": "",

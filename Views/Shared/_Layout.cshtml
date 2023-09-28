@@ -10,11 +10,31 @@
 </head>
 
 <body>
+    <!-- NavBar -->
+    <header>
+        <nav class="relative container mx-auto p-6 bg-rebeccapurple ">
+            <div class="flex items-center justify-between">
+                <!-- Logo -->
+                <div class="pt-2">
+                    <img src="img/logo.svg" alt="" />
+                </div>
+                <!-- Menu Items -->
+                <div class="hidden md:flex space-x-6 ">
+                    <a href="#" class="hover:text-darkGrayishBlue">Home</a>
+                    <a href="" class="hover:text-darkGrayishBlue">Product</a>
+                </div>
 
-    <div>
-        <header>
-            <h4>le menu</h4>
-        </header>
+                <!-- Button -->
+                <!-- <div class="hidden md:flex items-center space-x-4"> -->
+                <a href=""
+                   class="hidden md:block bg-brightRed text-white px-6 py-3 baseline rounded-full hover:bg-opacity-75">
+                    connect
+                </a>
+                <!-- </div> -->
+        </nav>
+    </header>
+    <div class="container">
+
         @RenderBody()
 
     </div>
@@ -22,18 +42,3 @@
 
 </html>
 
-
-@* <!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-
-<body>
-    <h2>Je suis ici</h2>
-</body>
-
-</html> *@

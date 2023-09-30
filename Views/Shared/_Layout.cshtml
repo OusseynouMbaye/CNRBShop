@@ -5,6 +5,7 @@
     <meta charset="utf-8" name="viewport" content="width=device-width" />
     <meta name="viewport" content="width=device-width" />
     <link rel="stylesheet" href="~/tailwind/tailwind.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/css/Styles.css" asp-append-version="true" />
     <base href="/" />
     <title>@ViewBag.Title</title>
 </head>
@@ -16,12 +17,12 @@
             <div class="flex items-center justify-between">
                 <!-- Logo -->
                 <div class="pt-2">
-                    <img src="img/logo.svg" alt="" />
+                    <img src="~/Images/Logo_CNRB.png" class="logo" alt="" />
                 </div>
                 <!-- Menu Items -->
                 <div class="hidden md:flex space-x-6 ">
-                    <a href="#" class="hover:text-darkGrayishBlue">Home</a>
-                    <a href="" class="hover:text-darkGrayishBlue">Product</a>
+                    <a asp-controller="Home" asp-action="Index" class="hover:text-darkGrayishBlue">Home</a>
+                    <a asp-controller="Product" asp-action="ListProduct" class="hover:text-darkGrayishBlue">Product</a>
                 </div>
 
                 <!-- Button -->
@@ -30,7 +31,7 @@
                    class="hidden md:block bg-brightRed text-white px-6 py-3 baseline rounded-full hover:bg-opacity-75">
                     connect
                 </a>
-                <!-- </div> -->
+            </div>
         </nav>
     </header>
     <div class="container">
